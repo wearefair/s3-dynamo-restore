@@ -5,3 +5,8 @@ This tool takes dumps from the [DynamoDB Continuous Backup](https://github.com/a
 ### Caveats
 - String-type attributes only (for now)
 - No time ranges, will batch write an entire S3 backup to the target Dynamo table
+
+### Usage
+
+`make clone` clones an existing table's attributes onto an empty table's.
+`make restore` restores all of the backed up content from a S3 bucket onto a target DynamoDB table
